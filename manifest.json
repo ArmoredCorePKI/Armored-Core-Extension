@@ -1,0 +1,25 @@
+{
+    "name": "Armored Core Browser Extension",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Armored Core browser extension",      
+    "background": {
+        "page": "./background/background.html",
+        "persistent": true
+    },
+    "browser_action": {
+        "default_icon": {
+            "16": "images/acorelogo.jpg"
+        },
+        "default_popup": "./popup/popup.html"
+    },
+    "permissions": [
+        "webNavigation",
+        "webRequest",
+        "webRequestBlocking",
+        "<all_urls>",
+        "tabs",
+        "storage",
+        "history"
+    ]
+}
